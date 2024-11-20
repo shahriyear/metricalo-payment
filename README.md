@@ -34,7 +34,7 @@ This project provides a flexible and extensible payment gateway integration fram
    ```
 3. Build and start the container:
    ```bash
-   sh ./start
+   sh ./start.sh
    ```
 Optional: to make executable file 
     ```
@@ -202,15 +202,33 @@ composer tests
 ## Commands
 ### Console Usage
 ```bash
-php bin/console app:example {gateway} --amount={amount} --currency={currency} --cardNumber={cardNumber} --cardExpMonth={month} --cardExpYear={year} --cardCvv={cvv}
+php bin/console app:example {gateway} \
+--amount={amount} \
+--currency={currency} \
+--cardNumber={cardNumber} \
+--cardExpMonth={month} \
+--cardExpYear={year} \
+--cardCvv={cvv}
 ```
 - Docker
 ```bash
-docker exec -it payment-php php bin/console app:example shift4 --amount=100 --currency=USD --cardNumber=4200000000000000 --cardExpMonth=12 --cardExpYear=2025 --cardCvv=123
+docker exec -it payment-php php bin/console app:example shift4 \
+--amount=100 \
+--currency=USD \
+--cardNumber=4200000000000000 \
+--cardExpMonth=12 \
+--cardExpYear=2025 \
+--cardCvv=123;
 ```
 - Locally
 ```bash
-php bin/console app:example shift4 --amount=100 --currency=USD --cardNumber=4200000000000000 --cardExpMonth=12 --cardExpYear=2025 --cardCvv=123
+php bin/console app:example shift4 \
+--amount=100 \
+--currency=USD \
+--cardNumber=4200000000000000 \
+--cardExpMonth=12 \
+--cardExpYear=2025 \
+--cardCvv=123;
 ```
 
 ---
