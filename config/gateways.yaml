@@ -1,0 +1,13 @@
+parameters:
+    gateways:
+        shift4:
+            class: App\Gateway\Shift4Gateway
+            configs:
+                apiUrl: "https://api.shift4.com"
+                apiKey: "sk_test_ikYubdTU3FtWh0Gt3qcCf6jA"
+        aci:
+            class: App\Gateway\AciGateway
+            configs:
+                apiUrl: "https://eu-test.oppwa.com"
+                apiVersion: "v1"
+                entityId: "8a8294174b7ecb28014b9699220015ca"

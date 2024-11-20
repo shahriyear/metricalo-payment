@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/app/phpunit.xml.dist" tests="14" assertions="60" errors="0" failures="0" skipped="0" time="2.523820">
+    <testsuite name="Application Test Suite" tests="14" assertions="60" errors="0" failures="0" skipped="0" time="2.523820">
+      <testsuite name="App\Tests\Command\AppExampleCommandTest" file="/app/tests/Command/AppExampleCommandTest.php" tests="3" assertions="10" errors="0" failures="0" skipped="0" time="0.036362">
+        <testcase name="testCommandExecutesSuccessfully" file="/app/tests/Command/AppExampleCommandTest.php" line="36" class="App\Tests\Command\AppExampleCommandTest" classname="App.Tests.Command.AppExampleCommandTest" assertions="5" time="0.032423"/>
+        <testcase name="testCommandValidationFails" file="/app/tests/Command/AppExampleCommandTest.php" line="83" class="App\Tests\Command\AppExampleCommandTest" classname="App.Tests.Command.AppExampleCommandTest" assertions="3" time="0.002011"/>
+        <testcase name="testCommandWithInvalidGateway" file="/app/tests/Command/AppExampleCommandTest.php" line="117" class="App\Tests\Command\AppExampleCommandTest" classname="App.Tests.Command.AppExampleCommandTest" assertions="2" time="0.001929"/>
+      </testsuite>
+      <testsuite name="ApiControllerTest" file="/app/tests/Controller/ApiControllerTest.php" tests="5" assertions="25" errors="0" failures="0" skipped="0" time="2.480650">
+        <testcase name="testHandleRequestWithValidInputUsingShift4Gateway" file="/app/tests/Controller/ApiControllerTest.php" line="13" class="ApiControllerTest" classname="ApiControllerTest" assertions="3" time="0.732910"/>
+        <testcase name="testHandleRequestWithMissingRequiredFields" file="/app/tests/Controller/ApiControllerTest.php" line="34" class="ApiControllerTest" classname="ApiControllerTest" assertions="5" time="0.007345"/>
+        <testcase name="testHandleRequestWithInvalidInput" file="/app/tests/Controller/ApiControllerTest.php" line="64" class="ApiControllerTest" classname="ApiControllerTest" assertions="6" time="0.002575"/>
+        <testcase name="testHandleRequestWithUnsupportedGateway" file="/app/tests/Controller/ApiControllerTest.php" line="94" class="ApiControllerTest" classname="ApiControllerTest" assertions="4" time="0.006376"/>
+        <testcase name="testHandleRequestWithValidInputUsingAciGateway" file="/app/tests/Controller/ApiControllerTest.php" line="124" class="ApiControllerTest" classname="ApiControllerTest" assertions="7" time="1.731445"/>
+      </testsuite>
+      <testsuite name="GatewayRegistryTest" file="/app/tests/Service/GatewayRegistryTest.php" tests="3" assertions="8" errors="0" failures="0" skipped="0" time="0.003809">
+        <testcase name="testGetGatewayThrowsExceptionForInvalidGateway" file="/app/tests/Service/GatewayRegistryTest.php" line="14" class="GatewayRegistryTest" classname="GatewayRegistryTest" assertions="2" time="0.003036"/>
+        <testcase name="testGetGatewaySuccessfully" file="/app/tests/Service/GatewayRegistryTest.php" line="36" class="GatewayRegistryTest" classname="GatewayRegistryTest" assertions="3" time="0.000445"/>
+        <testcase name="testGatewayConfiguration" file="/app/tests/Service/GatewayRegistryTest.php" line="67" class="GatewayRegistryTest" classname="GatewayRegistryTest" assertions="3" time="0.000328"/>
+      </testsuite>
+      <testsuite name="PaymentProcessorTest" file="/app/tests/Service/PaymentProcessorTest.php" tests="3" assertions="17" errors="0" failures="0" skipped="0" time="0.002998">
+        <testcase name="testProcessPaymentSuccessfully" file="/app/tests/Service/PaymentProcessorTest.php" line="32" class="PaymentProcessorTest" classname="PaymentProcessorTest" assertions="6" time="0.002254"/>
+        <testcase name="testProcessPaymentFailsWithGatewayError" file="/app/tests/Service/PaymentProcessorTest.php" line="73" class="PaymentProcessorTest" classname="PaymentProcessorTest" assertions="7" time="0.000444"/>
+        <testcase name="testProcessPaymentWithInvalidGateway" file="/app/tests/Service/PaymentProcessorTest.php" line="116" class="PaymentProcessorTest" classname="PaymentProcessorTest" assertions="4" time="0.000300"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
